@@ -10,13 +10,16 @@
 // You will have time to focus on it later.
 // Au clic sur le bouton, calcule et affiche les carrés des nombres pairs entre 1 et 21.
 
+// NOTE: don't focus on the existing code structure for now.
+// You will have time to focus on it later.
+
 (() => {
     document.getElementById("run").addEventListener("click", () => {
-        for (let i = 1; i <= 21; i++) {
-            if (i % 2 === 0) {
-                console.log(i * i);
-            }
+        let resultat;
+        for(let i=1; i<=21;i++){
+            resultat[i] = parseInt(resultat[i]);
+            if(resultat%2===0);
+            alert(i*i);
         }
-
     });
 })();

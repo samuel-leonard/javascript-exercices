@@ -11,15 +11,13 @@
 // <p>Pose trois questions à l'utilisateur : son âge, sexe et ville. Affiche-les dans une <em>boîte de dialogue</em> qui lui demandera de confirmer. S'il ne confirme pas ses informations, <strong>recommence le processus</strong>.</p>
 
 
-    var age =   prompt("quel est votre age?");
-    var sexe =  prompt("quel est votre sexe?");
-    var ville = prompt('Dans quelle ville habitez vous?');
+    let age =prompt("quel age avez vous?");
+    let sexe= prompt("êtes vous un homme ou une femme?");
+    let ville=prompt("dans quelle ville habitez vous?");
 
+    while (confirm("vous avez "+age+" ans\nVous êtes un(e) "+sexe+"\nVous habitez "+ville)===false){
+        age =prompt("quel age avez vous?");
+        sexe= prompt("êtes vous un homme ou une femme?");
+        ville=prompt("dans quelle ville habitez vous?");
 
-    
-    while(confirm("Vous avez "+age+ " ans, vous êtes un(e) "+ sexe+ " Et vous habitez "+ ville)==false){
-        
-    age =   prompt("quel est votre age?");
-    sexe =  prompt("quel est votre sexe?");
-    ville = prompt('Dans quelle ville habitez vous?');
     }

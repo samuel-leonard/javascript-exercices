@@ -12,11 +12,10 @@
 
 (() => {
     // your code here
-    let sourceAttr = document.getElementById("source").getAttribute("data-image");
-    let target = document.getElementById("target");
-    let image = document.createElement("img");
-    image.setAttribute("alt", sourceAttr);
-    target.appendChild(image);
-
-    document.querySelector(".material").removeChild(document.querySelector("#source"));
+    let image = document.querySelector(".material figure img");
+    let newImage = image.getAttribute("data-hover");
+    image.addEventListener("mouseover", () => {
+        console.log(newImage);
+        image.setAttribute("src", newImage);
+    });
 })();

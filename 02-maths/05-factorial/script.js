@@ -15,12 +15,15 @@
 
     document.getElementById("run").addEventListener("click", () => {
 
-        let number = parseInt(document.getElementById("number").value);
-        let factoriel = 1;
-        for (let i = number; i >0; i--) {
-            factoriel*=i;
-        }
-        alert(factoriel);
+        
+
+            let number = parseInt(document.getElementById("number").value);
+            let factoriel = 1;
+            for(let i = number ; i > 0; i--){
+                factoriel *=i; 
+            }
+            alert(factoriel);
+        
 
     });
 })();
