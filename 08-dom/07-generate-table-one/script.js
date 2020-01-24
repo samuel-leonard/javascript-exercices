@@ -8,7 +8,9 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+// Génère, dans la balise dont l'id est "target", un tableau HTML d'une colonne et dix rangées.
 
-(() => {
-    // your code here
+
+(() => { 
+    document.getElementById("target").innerHTML="<table><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr></table>";
 })();

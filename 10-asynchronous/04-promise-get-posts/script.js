@@ -10,5 +10,15 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    // your code here   
+      document.getElementById("run").addEventListener("click", () => {
+            const promise1 = window.lib.getPosts();
+            promise1.then(
+                  (articles => {
+                        console.log(articles); //Affiche la valeur si la promesse est tenue
+                  }
+                  ).catch(error => {
+                        console.error(error); //Affiche l'erreur si la promesse est rompue
+            }));
+      });
 })();

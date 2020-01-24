@@ -10,5 +10,13 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", async () => {
+        let adress = await fetch("http://localhost:3000/heroes");
+        let heroName = document.getElementById("hero-name");
+        let heroAlterEgo= document.getElementById("hero-alter-ego");
+        let heroPower = document.getElementById("hero-powers");
+        let response = await adress.json();
+        console.log (response);
+
+    });
 })();

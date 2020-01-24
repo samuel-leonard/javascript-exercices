@@ -10,5 +10,5 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    const afftable = document.getElementById("target"); table = document.createElement("table"); for (let i = 1; i < 11; i) { let col = document.createElement("td"); for (let j = 1; j < 11; j) { let row = document.createElement("tr"); row.innerHTML = i * j; col.appendChild(row); } table.appendChild(col); } afftable.appendChild(table);
 })();

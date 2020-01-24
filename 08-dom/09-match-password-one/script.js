@@ -9,6 +9,20 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(() => {
-    // your code here
-})();
+document.querySelector("button").addEventListener("click",()=>{
+
+    let passOne = document.getElementById("pass-one");
+    let passTwo = document.getElementById("pass-two");
+
+
+    if (passOne.value== passTwo.value) {
+        passOne.style.border = "1px solid green";
+        passTwo.style.border = "1px solid green";
+
+
+    } else {
+        passOne.style.border = "1px solid red";
+        passTwo.style.border = "1px solid red";
+    }
+
+});

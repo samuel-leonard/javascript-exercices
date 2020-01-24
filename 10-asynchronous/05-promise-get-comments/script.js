@@ -9,6 +9,24 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
+
 (() => {
-    // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+        window.lib.getPosts().then(
+
+            (articles => {
+                articles.forEach(article => {
+                    window.lib.getComments(article.id).then(
+                        (coms => {
+                            article.comments = coms;
+                        })
+                    );
+                    console.log(article); //Imprime l'article et ses propriétés
+                });
+            })
+        );
+    });
+
 })();
